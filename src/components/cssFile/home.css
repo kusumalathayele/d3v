@@ -1,0 +1,93 @@
+
+
+.home-container {
+    background-color: rgb(197, 240, 225);
+    height: 100%;
+  }
+  .navabar {
+    position: sticky;
+    top: 0%;
+    background-color: rgb(8, 230, 200);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navabar button {
+    background-color: rgb(243, 30, 215);
+    border: 2px solid white;
+    padding: 1em;
+    border-radius: 10px;
+    color: whitesmoke;
+  }
+  .navabar input,
+  select {
+    border: 2px solid white;
+    padding: 1em;
+    border-radius: 10px;
+    margin: 2px;
+  }
+  .product-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    row-gap: 40px; /* Set the row gap to 40px */
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  .card img {
+    height: 250px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+ 
+  @media screen and (max-width: 767px) {
+    .navbar {
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .product-container {
+      grid-template-columns: auto;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .product-container {
+      grid-template-columns: auto auto;
+    }
+  }
+
+
+  .close {
+    position: relative;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
